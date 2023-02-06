@@ -1,0 +1,208 @@
+/* reset */
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4em;
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+    font-size: normal;
+
+}
+
+/* defaults */
+h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 3.4em;
+}
+
+h2 {
+    font-size: 2.1em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+/* layout */
+body {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: 
+        "header header header"
+        "aside1 main aside2"
+        "footer footer footer";
+        gap: 1em;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+}
+
+header {
+    grid-area: header;
+
+}
+
+main {
+    grid-area: main;
+
+}
+
+#aside-1 {
+    grid-area: aside1;
+
+}
+
+#aside-2 {
+    grid-area: aside2;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #ffbe45;
+    padding: 2em;
+    text-align: center;
+}
+
+/* Navigation */
+#main-nav {
+    width: 100%;
+    background-color: #ffbe45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-nav > ul {
+    display: flex;
+}
+
+#main-nav > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.25s;
+}
+
+#main-nav > ul > li > a:hover {
+    background-color: #ffa600;
+}
+
+/* Header */
+header > h1 {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+}
+
+footer > p {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+
+/* Aside Styles */
+#aside-1 {
+    border-right: 2px solid #333;
+}
+
+#aside-1 > h2, #aside-2 > h2 {
+    background-color: #ffbe45;
+    padding: 0.5em;
+}
+
+.ci-level-1 {
+    padding-left: 1em;
+}
+
+.ci-level-1 > li > h3 {
+    margin-top: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #333;
+}
+
+.ci-level-2 {
+    padding-left: 1em;
+    
+}
+
+.ci-level-2 > li {
+    padding: 0.25em 0;
+}
+
+#aside-2 {
+    border-left: 2px solid #333;
+}
+
+#aside-2 > section {
+    padding-left: 1em;
+}
+
+#aside-2 h3 {
+    margin-top: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #333;
+}
+
+#ingredients > li, #steps > li {
+    padding-left: 1em;
+}
+
+#steps > li {
+    list-style: decimal;
+    margin: 0.5em;
+    padding-left: 0.5em;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border: 2px solid #333;
+    padding: 1em;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+table tr {
+    border: 1px solid #333;
+    padding:0.5em 0
+}
+table th, table td {
+    padding: 0.5em 0;
+
+}
+
+table th{
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+table > tfoot > tr > td{
+    text-align: center;
+    vertical-align: middle;
+    border-top: 2px solid #333;
+}
+
+.border-left{
+    border-left: 2px solid #333;
+}
